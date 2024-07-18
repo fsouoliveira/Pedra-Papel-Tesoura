@@ -1,6 +1,7 @@
 # Pedra-Papel-Tesoura
 
 Pedra, Papel ou Tesoura
+***
 Este é um jogo simples de Pedra, Papel ou Tesoura desenvolvido com HTML, CSS e JavaScript. O jogo permite que um jogador jogue contra o computador, que faz uma escolha aleatória.
 
 Visão Geral
