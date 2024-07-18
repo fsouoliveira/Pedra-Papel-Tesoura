@@ -18,9 +18,9 @@ Exibição do resultado (vitória, derrota ou empate).
 #
 Tecnologias Utilizadas  
 
-HTML5
-CSS3
-JavaScript  
+HTML5  
+CSS3  
+JavaScript    
 #
 Como Executar o Projeto
 Clone o repositório:
