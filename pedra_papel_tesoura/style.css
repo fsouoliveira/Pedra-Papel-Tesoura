@@ -1,0 +1,69 @@
+/* Reset de padding, margin e define box-sizing para border-box para todos os elementos */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes */
+}
+
+/* Estilos para o corpo da página */
+body {
+    width: 100%;
+    min-height: 100vh; /* Define a altura mínima como a altura da janela de visualização */
+    display: grid; /* Usa display grid para centralizar os itens */
+    place-items: center; /* Centraliza os itens no centro da página */
+    background-color: rgba(240, 240, 240, 1); /* Define a cor de fundo */
+}
+
+/* Container principal do jogo */
+.game-container {
+    width: 100%;
+    max-width: 480px; /* Define a largura máxima do container */
+    display: grid; /* Usa display grid */
+    grid-template-columns: 1fr; /* Define uma coluna para o grid */
+}
+
+/* Container que agrupa os jogadores */
+.game-container > .players-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas iguais para o grid */
+}
+
+/* Estilos para cada div dentro do container de jogadores */
+.game-container > .players-container > div {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens dentro do flexbox sejam quebrados em várias linhas */
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+/* Estilo específico para o jogador */
+.game-container > .players-container > .player {
+    transform: rotateY('180deg'); /* Rotaciona o jogador em 180 graus no eixo Y */
+}
+
+/* Estilos para cada opção (pedra, papel, tesoura) */
+.game-container > .players-container .option {
+    width: 100%;
+    max-width: 150px; /* Define a largura máxima para as opções */
+    opacity: 0.5; /* Define a opacidade inicial */
+    transition: 0.5s; /* Define a transição de 0.5 segundos para mudanças de opacidade */
+}
+
+/* Estilos para hover (passar o mouse) sobre as opções do jogador */
+.game-container > .players-container > .player > .option:hover{
+    opacity: 1; /* Aumenta a opacidade quando o mouse passa por cima */
+}
+
+/* Estilos para as imagens dentro das opções */
+.game-container > .players-container .option > img {
+    width: 100%; /* Define a largura da imagem para ocupar todo o container da opção */
+    object-fit: contain; /* Faz com que a imagem seja redimensionada para caber dentro do container sem distorção */
+}
+
+/* Container que exibe o resultado do jogo */
+.game-container > .result-container {
+    padding: 16px; /* Define o padding interno */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 22px; /* Define o tamanho da fonte */
+    color: rgba(60, 60, 60, 1); /* Define a cor do texto */
+}
